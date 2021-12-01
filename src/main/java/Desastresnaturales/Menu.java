@@ -1,9 +1,12 @@
+package Desastresnaturales;
+
 import Desastresnaturales.Geofisicos;
 
 import java.util.Scanner;
 
 public class Menu {
-        public static void iniciarPrograma() {
+
+    public static void iniciarPrograma() {
             boolean a;
             do {
                 menuPrincipal();
@@ -21,7 +24,7 @@ public class Menu {
             System.out.println("*             Bienvenido            *");
             System.out.println("**********************************************************");
             System.out.println("Por favor, seleccione una de las opcíones");
-            System.out.println("[1] Ver Desastres Geológicos");
+            System.out.println("[1] Ver Desastres Geofísicos");
             System.out.println("[2] Ver Desastres Climatológicos");
             System.out.println("[3] Ver Desastres Meteorológicos");
             System.out.println("[4] Ver Desastres Biológicos");
@@ -62,19 +65,17 @@ public class Menu {
             switch (ingresoDatos) {
                 case "1" -> {
                     do {
-                        Geofisicos l = new Geofisicos();
-                        System.out.println("Agregar Productos");
+                        System.out.println("Desastres Geofísicos");
+                        Geofisicos desastre = new Geofisicos("Erupción Volcánica", " Chile", "03/03/2015", 40, 60000 , 2 );
                         a = true;
-                        System.out.println("¿Desea ver otro ?");
-                        textoSalida();
-                        a = salir();
+
                     } while (a == true);
                 }
                 case "2" -> {
                     do {
-                        System.out.println("Quitar Productos");
+
                         a = true;
-                        System.out.println("Desea ver mas ?");
+
                         textoSalida();
                         a = salir();
                     } while (a == true);
@@ -82,9 +83,9 @@ public class Menu {
                 }
                 case "3" -> {
                     do {
-                        System.out.println("Modificar el estado del camion");
+
                         a = true;
-                        System.out.println("Desea ver mas opciones?");
+
                         textoSalida();
                         a = salir();
                     } while (a == true);
@@ -92,9 +93,9 @@ public class Menu {
                 }
                 case "4" -> {
                     do {
-                        System.out.println("Agregar Camiones");
+
                         a = true;
-                        System.out.println("Desea ver mas opciones?");
+
                         textoSalida();
                         a = salir();
                     } while (a == true);
