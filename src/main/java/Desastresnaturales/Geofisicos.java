@@ -1,4 +1,7 @@
 package Desastresnaturales;
 
-public class Geofisicos {
+public class Geofisicos extends Desastres{
+    public Geofisicos() {
+        super(nombre, lugar, fecha);
+    }
 }
