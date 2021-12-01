@@ -64,41 +64,37 @@ public class Menu {
             boolean a = false;
             switch (ingresoDatos) {
                 case "1" -> {
-                    do {
+
                         System.out.println("Desastres Geofísicos");
                         Geofisicos desastre = new Geofisicos("Erupción Volcánica", " Chile", "03/03/2015", 40, 60000 , 2 );
                         a = true;
 
-                    } while (a == true);
+
                 }
                 case "2" -> {
-                    do {
+
 
                         a = true;
 
-                        textoSalida();
-                        a = salir();
-                    } while (a == true);
+
+
                     break;
                 }
                 case "3" -> {
-                    do {
+
 
                         a = true;
 
-                        textoSalida();
-                        a = salir();
-                    } while (a == true);
+
                     break;
                 }
                 case "4" -> {
-                    do {
+
 
                         a = true;
 
-                        textoSalida();
-                        a = salir();
-                    } while (a == true);
+
+
                     break;
                 }
 
